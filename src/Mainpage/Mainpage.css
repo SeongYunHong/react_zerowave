@@ -1,0 +1,394 @@
+@charset "utf-8";
+
+
+.text_none {
+    font-size: 18px; padding: 1em;
+}
+
+
+
+
+
+#index > .section {
+    --font-size-pc: 10;
+    --font-size-mob: 10;
+    font-size: min(calc(var(--font-size-mob) / 500 * 100vw), calc(var(--font-size-pc) * 1px));
+    width: 100%;
+}
+
+.index {
+    --index-border-radius:15px;
+    position: relative;
+}
+.index .bg {
+    position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+    background: url('/public/images/index_bg.jpg') no-repeat center / cover;
+}
+.index .bg::after {
+    content: ''; position: absolute;
+    left: 0; top: 0; width: 100%; height: 100%;
+    background: #fff; opacity: 0.5;
+}
+.index > .containerV1 {
+    position: relative;
+}
+.index .itemBox {
+    --font-size-pc: 10;
+    --font-size-mob: 10;
+    font-size: min(calc(var(--font-size-mob) / 500 * 100vw), calc(var(--font-size-pc) * 1px));
+    padding: 6em 0 8em; display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:5em;
+}
+.index .map_wrap {
+    background: #ccc; border-radius: var(--index-border-radius);
+    overflow: hidden; box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.index .map_wrap .inner {
+    width: 100%; height: 100%;
+}
+.index .map_wrap .item {
+    width: 100%; height: 100%;
+}
+.index .fire_state_box {
+    display: flex; gap:2em;
+    margin-bottom: 2em;
+    grid-template-columns: 1fr 1fr;
+}
+.index .fire_state_box > li {
+    background: #fff;
+    border-radius: var(--index-border-radius);
+    padding: 1.5em;
+    width: -webkit-fill-available;
+    display: grid; 
+    grid-template-columns: 1fr 1.2fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.index .fire_state_box .item1 {
+    --item-color:#2873d9;
+}
+.index .fire_state_box .item2 {
+    --item-color:#818181;
+}
+.index .fire_state_box .item3 {
+    --item-color:#32B94A;
+}
+.index .fire_state_box .text1 {
+    font-size: 1.5em; background: var(--item-color);
+    color: #fff; padding: 0.4em 0.9em; line-height: 1.4;
+    margin-bottom: 0.4em; border-radius: 2em;
+}
+.index .fire_state_box .count {
+    font-size: 4em; color: var(--item-color);
+    font-weight: bold;
+}
+.index .gi_shang_chung {
+    background: #fff;
+    border-radius: var(--index-border-radius);
+    margin-bottom: 2em;
+}
+.index .gi_shang_chung .title_box {
+    display: flex; padding:1.5em;
+    border-bottom: 1px solid var(--main-color);
+    align-items: center; justify-content: space-between;
+}
+.index .gi_shang_chung .title_box .text1 {
+    font-size: 2.4em;
+}
+.index .gi_shang_chung .title_box .text1 .icon {
+    margin-right: 10px;
+}
+.index .gi_shang_chung .title_box .btn {
+    font-size: 1.8em;
+}
+.index .gi_shang_chung .weather_box {
+    padding: 1.5em; min-height: 17em;
+}
+.index .gi_shang_chung .weather_box .ondo {
+    font-size: 5em; text-align: center; 
+    font-weight: 500; margin-bottom: 0.5em;
+}
+.index .gi_shang_chung .weather_box .ondo .tem_box {
+    display: inline-flex; line-height: 0.95em;
+}
+.index .gi_shang_chung .weather_box .ondo .tem {
+    font-size: 0.5em;
+}
+.index .gi_shang_chung .weather_box .ondo small {
+    font-size: 0.5em; margin-left: 0.4em;
+    font-weight: 400;
+}
+.index .gi_shang_chung .weather_box .ondo small .icon {
+    font-size: 1.1em; color: var(--main-color);
+}
+.index .gi_shang_chung .weather_box .inner {
+    display: flex; font-size: 1.8em;
+}
+.index .gi_shang_chung .weather_box .inner > li {
+    border-right: 1px solid #bbb;
+    flex: 1; text-align: center; line-height: 1.6;
+    font-weight: 300;
+}
+.index .gi_shang_chung .weather_box .inner > li:last-child {
+    border-right: none;
+}
+.index .gi_shang_chung .weather_box .inner .text1 .icon {
+    margin-right: 5px;
+}
+
+.index .right_contents .bottom_box {
+    display: grid; gap:2em;
+    grid-template-columns: 1.8fr 1fr;
+}
+.index .right_contents .bottom_box > .item {
+    background: #fff; overflow: hidden;
+    border-radius: var(--index-border-radius);
+}
+
+
+.index .olhae_sanbul_balsaeng .inner {
+    padding: 15px 10px; text-align: center;
+}
+.index .olhae_sanbul_balsaeng .inner * {
+    line-height: 1.6;
+}
+.index .olhae_sanbul_balsaeng .mt_title_box {
+    text-align: center; font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+.index .olhae_sanbul_balsaeng .textBox1 {
+    display: flex; gap:5px; font-size: 14px;
+    margin-bottom: 0.8em;
+    justify-content: center;
+}
+.index .olhae_sanbul_balsaeng .textBox1 .height1 {
+    background: #ddd; font-weight: 500;
+    padding: 0.2em 0.5em; border-radius: 0.5em;
+}
+.index .olhae_sanbul_balsaeng .textBox1 .season {
+    background: var(--main-color); font-weight: 500; display: inline-block;
+    padding: 0.2em 0.5em; border-radius: 0.5em; color: #fff;
+}
+.index .olhae_sanbul_balsaeng .img {
+    width: 100%; height: 150px;
+    position: relative; overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    margin-bottom: 1em;
+}
+.index .olhae_sanbul_balsaeng .img img {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    width: auto; height: auto; max-width: initial;
+    min-width: 440px;
+}
+.index .olhae_sanbul_balsaeng .text_v1 {
+    font-size: 15px; color: #444;
+}
+.index .olhae_sanbul_balsaeng .mttime {
+    margin-bottom: 0.5em;
+}
+
+@media (max-width:1500px) {
+    .index .itemBox {
+        gap:3em;
+    }
+    .index .fire_state_box > li {
+        grid-template-columns: 1fr;
+        gap:1em;
+    }
+}
+@media (max-width:1400px) {
+    .index .gi_shang_chung .title_box {
+        display: grid; gap:2em; text-align: center;
+        justify-content: initial;
+    }
+    .index .gi_shang_chung .title_box .btn {
+        width: 100%;
+    }
+    .index .right_contents .bottom_box {
+        grid-template-columns: 1fr;
+    }
+    .index .olhae_sanbul_balsaeng .img {
+        height: 300px;
+    }
+    .index .olhae_sanbul_balsaeng .img img {
+        min-width: 120%;
+    }
+}
+@media (992px <= width <= 1200px) {
+    .index .gi_shang_chung .title_box .text1 {
+        font-size: 2em;
+    }
+    .index .gi_shang_chung .weather_box .inner {
+        font-size: 1.6em;
+    }
+}
+@media (max-width:991px) {
+    .index .itemBox {
+        grid-template-columns: 1fr;
+    }
+    .index .map_wrap .inner {
+        height: 400px;
+    }
+}
+@media (max-width:580px) {
+    .index .fire_state_box {
+        gap:1em;
+    }
+    .index .gi_shang_chung .title_box .text1 .icon {
+        margin-right: 5px;
+    }
+    .index .gi_shang_chung .weather_box .inner {
+        font-size: 1.65em;
+    }
+    .index .olhae_sanbul_balsaeng .mt_title_box {
+        font-size: 16px;
+    }
+    .index .olhae_sanbul_balsaeng .img {
+        height: 200px;
+    }
+}
+
+
+footer {
+    --font-size-pc: 14;
+    --font-size-mob: 12;
+    font-size: min(calc(var(--font-size-mob) / 350 * 100vw), calc(var(--font-size-pc) * 1px));
+    background: var(--main-color);
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.basic-post-list1 {
+    --border-color:#dcdcdc;
+    --font-size-pc: 10;
+    --font-size-mob: 10;
+    font-size: min( calc( var(--font-size-mob) / 450 * 100vw ), calc(var(--font-size-pc) * 1px) );
+    position: relative;
+}
+.basic-post-list1 .title_box {
+    display: flex; padding:15px 20px;
+    border-bottom: 1px solid var(--main-color);
+    justify-content: space-between;
+    align-items: center;
+}
+.basic-post-list1 .title_box .text {
+    font-size: 2.2em; font-weight: 500;
+}
+.basic-post-list1 .more .widget_btn {
+    display: inline-block;
+    color: var(--basic-border-color);
+    font-size: 3.5em; line-height: 0.9;
+}
+.basic-post-list1 .post-list { 
+    list-style:none; padding:0px;
+    font-size: 1.5em;
+}
+.basic-post-list1 .post-list li { padding:0px; margin:0px; }
+.basic-post-list1 .post-list li b { letter-spacing:-1px; padding-right:1px; }
+.basic-post-list1 .post-list li .name { letter-spacing:-1px; color:#888; padding-left:4px; padding-right:1px;}
+.basic-post-list1 .post-list .txt-normal { letter-spacing:0; }
+.basic-post-list1 .post-none { padding:50px 10px; text-align:center; color:#888; }
+.basic-post-list1 .wr-text { font-family:dotum; font-size:11px; letter-spacing:-1px; line-height:11px; font-weight:normal; }
+.basic-post-list1 .wr-icon { display:inline-block; padding:0px; margin:0px; line-height:12px; vertical-align:middle; background-repeat: no-repeat; background-position: 0px 0px; }
+
+
+
+/* 리스트 첫번째 */
+@media all {
+    .basic-post-list1 .post-list li.item-first > a {
+        border-bottom: 1px solid var(--border-color);
+        padding: 1em 0.8em; display: grid; grid-template-columns: auto 1fr; 
+        gap:1.6em; align-items:center;
+    }
+    .basic-post-list1 .post-list li.item-first > a .dateBox {
+        background: var(--main-color); width: 5.7em; height: 5.7em;
+        text-align: center; color: #fff; border-radius:50%;
+        display: grid; align-content: center;
+    }
+    .basic-post-list1 .post-list li.item-first > a .dateBox .day { 
+        font-size: 2.8125em;
+    }
+    .basic-post-list1 .post-list li.item-first > a .dateBox .Ym { 
+        font-size: 1em; margin-top: 0.2em;
+    }
+    .basic-post-list1 .post-list li.item-first > a .textBox { overflow: hidden; }
+    .basic-post-list1 .post-list li.item-first > a .textBox .titleV2 {
+        margin: 0.5em 0; font-size: 1.25em;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        height: 1em;
+    } 
+    .basic-post-list1 .post-list li.item-first > a .textBox .titleV2 { 
+        font-weight: bold; color: #000; 
+    }
+    .basic-post-list1 .post-list li.item-first > a .textBox .text { 
+        --line-height:1.5;
+        --line-clamp:2;
+        color: #707070; font-size: 1em;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: var(--line-clamp);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        height: calc(var(--line-height) * var(--line-clamp) * 1em); 
+        line-height: var(--line-height);
+    }
+    .basic-post-list1 .post-list li.item-first > a:hover {
+        background: #f1f1f1;
+    }
+    .basic-post-list1 .post-list li.item-first > a:hover .textBox .text {
+        color: #444;
+    }
+}
+
+/* 리스트 일반 */
+.basic-post-list1 .post-list li.basic > a {
+    display: grid; grid-template-columns: 3.5fr 1fr;
+    align-items: center;
+    padding: 0.9em 1em; font-size: 1.125em;
+    border-bottom: 1px solid var(--border-color);
+}
+.basic-post-list1 .post-list li.basic > a .wr_subject {
+    padding-left: 0.7em; position: relative; color: #313131;
+}
+.basic-post-list1 .post-list li.basic > a .wr_subject:before {
+    content: '·'; position: absolute; left: 0; top: 0;
+    color: var(--main-color);
+}
+.basic-post-list1 .post-list li.basic > a .dateV1 {
+    justify-self: end; color: #535353; font-size: 0.83em;
+}
+.basic-post-list1 .post-list li.basic > a:hover {
+    background: #f1f1f1;
+}
+
+/* 반응형 */
+@media (max-width:768px) {
+    .basic-post-list1 .post-list li.item-first > a {
+        gap:1.2em;
+    }
+    .basic-post-list1 .post-list li.basic > a {
+        grid-template-columns: 1fr auto; gap:1em;
+    }
+}
+
+
+
+

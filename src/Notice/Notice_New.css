@@ -1,0 +1,56 @@
+.write_form {
+    max-width: 1080px;
+    margin: 0 auto 5px;
+}
+.write_form .title_box {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 30px;
+}
+.write_form .title_box h2 {
+    font-size: 18px; font-weight: bold;
+    padding-bottom: 0.65em; position: relative;
+    display: inline-block;
+}
+.write_form .title_box h2::after {
+    content: '';
+    position: absolute; left: 0; bottom: -2px;
+    width: 100%; height: 2px; 
+    background: var(--main-color);
+}
+
+.detail_form {
+   font-size: 16px;
+   display: grid; gap:1em;
+   width: 100%; padding: 0 15px;
+}
+.detail_form .item {
+    display: flex;
+}
+.detail_form .item label {
+    width: 10em;
+}
+.detail_form .item .inputBox {
+    flex: 1; padding: 5px 10px;
+    border: 1px solid #ddd;
+}
+.detail_form .item textarea.inputBox {
+    min-height: 10em;
+}
+.detail_form .item.submitBox {
+    display: flex; justify-content: center;
+    text-align: center; gap:15px; font-size: 18px;
+    margin-top: 1em;
+}
+.detail_form .item.submitBox button.submitbtn {
+    color: #fff; background: var(--main-color);
+}
+.detail_form .item.submitBox button {
+    padding: 0.7em 2.5em; background: #ddd; 
+}
+
+@media (max-width:768px) {
+    .detail_form { padding: 0; }
+    .detail_form .item {
+        display: grid; gap:10px
+    }
+}

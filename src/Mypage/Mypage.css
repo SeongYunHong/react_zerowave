@@ -1,0 +1,40 @@
+.mypage_wrap {
+    font-size: 18px; line-height: 1.4;
+}
+.mypage_wrap .item {
+    margin-bottom: 1em;
+}
+.mypage_wrap label {
+    font-size: 1em; margin-bottom: 0.5em;
+    color: #333;
+}
+.mypage_wrap .textBox {
+    display: block; border: 1px solid #c7c7c7;
+    font-size: 0.9em; padding: 0.5em;
+}
+.mypage_wrap .textBox.info {
+    color: #818181; background: #eee;
+}
+
+.mypage_wrap .submit_box {
+    display: flex; gap:1em; padding-top: 1em;
+}
+.mypage_wrap .submit_box > * {
+    flex:1; background: #eee;
+    padding: 0.5em 0; border-radius: 0.3em;
+}
+.mypage_wrap .submit_box .update {
+    color: #fff; background: var(--main-color);
+}
+
+.mypage_wrap .submit_box .update:hover {
+    background: #006b05;
+}
+.mypage_wrap .submit_box .delete:hover {
+    background: #ddd;
+}
+@media (max-width:480px) {
+    .mypage_wrap {
+        font-size: 16px;
+    }
+}

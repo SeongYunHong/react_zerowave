@@ -1,0 +1,18 @@
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 25px;
+    z-index: 1000;
+    width: 2em; height: 2em;
+  }
+  
+  .scroll-to-top-btn:hover {
+    background-color: rgba(0,0,0,0.6);
+  }
+  

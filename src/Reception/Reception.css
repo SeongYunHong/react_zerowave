@@ -1,0 +1,76 @@
+
+
+.reception_gallery {
+    font-size: 16px;
+    display: grid; grid-template-columns: repeat(5,1fr);
+    gap:30px 15px; margin-top: 30px;
+}
+.reception_gallery .text1 { line-height: 1.4; }
+.reception_gallery .img {
+    width: 100%; height: 250px; border-radius: 1em;
+    position: relative; overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    margin-bottom: 1em;
+}
+.reception_gallery .img img {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    width: auto; height: auto; max-width: initial;
+    min-width: 440px;
+}
+.reception_gallery .textBox {
+    padding: 0 5px;
+}
+.reception_gallery .addr {
+  font-size: 1em; margin-bottom: 0.6em;
+  line-height: 1.4;
+  display: flex; gap:5px;
+}
+.reception_gallery .textBox .inner1 {
+    display: flex; gap:5px;
+    margin-bottom: 0.8em; color: #777;
+}
+.reception_gallery .textBox .date { font-size: 0.9em; }
+.reception_gallery .textBox .icon { font-size: 0.9em; }
+.reception_gallery .textBox .inner1 .state {
+  color: rgb(49, 49, 143); font-weight: 500;
+  font-size: 1.2em;
+}
+.reception_gallery .item.progress-completed .textBox .inner1 .state {
+    color: #818181;
+}
+.reception_gallery .item .textBox .inner1.progress-completed .state {
+    color: #818181;
+}
+
+.reception_gallery .item.progress-external-completed .textBox .inner1 .state {
+    color: #32B94A;
+}
+.reception_gallery .item .textBox .inner1.progress-external-completed .state {
+    color: #32B94A;
+}
+
+
+
+
+@media (max-width:1400px) {
+    .reception_gallery {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media (max-width:1200px) {
+    .reception_gallery {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width:768px) {
+    .reception_gallery {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:580px) {
+    .reception_gallery {
+        grid-template-columns: repeat(1,1fr);
+        max-width: 350px; margin: 30px auto;
+    }
+}

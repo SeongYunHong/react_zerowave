@@ -1,0 +1,66 @@
+.admin-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 45px;
+}
+
+.admin-filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.admin-select,
+.admin-search,
+.admin-search-btn {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+}
+
+.admin-search-btn {
+  background-color: #008f68; /* 예시 색상 */
+  color: white;
+  cursor: pointer;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.admin-table a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-pagination {
+  text-align: center;
+}
+
+.admin-pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.admin-pagination .active {
+  background-color: #008f68; /* 예시 색상 */
+  color: white;
+}

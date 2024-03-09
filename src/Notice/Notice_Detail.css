@@ -1,0 +1,77 @@
+.notice_detail_wrap {
+  --font-size-pc: 10;
+  --font-size-mob: 10;
+  font-size: min(calc(var(--font-size-mob) / 400 * 100vw), calc(var(--font-size-pc) * 1px));
+}
+
+
+.notice_detail {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.notice_detail .titleBox {
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #ddd;
+  padding: 2.5em 1em;
+}
+
+.notice_detail .titleBox .title {
+  font-size: 2.8em; line-height: 1.4;
+  font-weight: bold; color: #333;
+  margin-bottom: 0.5em;
+}
+.notice_detail .titleBox .notice_info {
+  font-size: 1.5em; color: #666;
+  display: flex; align-items: center;
+}
+.notice_detail .titleBox .notice_info span {
+  display: inline-flex; align-items: center;
+  gap:5px; position: relative; 
+}
+.notice_detail .titleBox .notice_info span:not(:last-child) {
+  padding-right: 1.4em;
+}
+.notice_detail .titleBox .notice_info span:not(:last-child)::before {
+  content: '|'; position: absolute; right: 0.7em; top: 0.15em;
+  font-size: 0.8em;
+}
+.notice_detail .itemBox {
+  padding: 4em 0.5em; border-bottom: 1px solid #000;
+}
+.notice_detail .itemBox .img { text-align: center; }
+.notice_detail .itemBox .textBox {
+  font-size: 1.6em; line-height: 1.8;
+  padding: 2em 0;
+}
+.notice_detail .itemBox .notice_navigation {
+  display: flex; justify-content: space-between;
+  padding: 1em; font-size: 1.8em; font-weight: 500;
+  color: var(---main-color);
+}
+.notice_detail .itemBox .notice_navigation button .icon {
+  transform: translateY(5%);  
+}
+.notice_detail .itemBox .notice_navigation button:first-child .icon {
+  margin-right: 0.5em; 
+}
+.notice_detail .itemBox .notice_navigation button:last-child .icon {
+  margin-left: 0.5em;
+}
+.notice_detail .btn_box {
+  display: flex; justify-content: flex-end;
+  font-size: 1.8em; gap:5px; margin-top: 2em; 
+}
+.notice_detail .btn_box button {
+  background: var(--main-color);
+  color: #fff; padding: 0.7em 1em;
+  border: 1px solid var(--main-color);
+}
+.notice_detail .btn_box button.edit {
+  background: #ddd; color: #000;
+  border: 1px solid #bbb;
+}
+
+@media (max-width:580px) {
+  
+}
